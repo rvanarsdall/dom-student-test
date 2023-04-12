@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Test</title>
+  </head>
+  <body>
+    <header><h2>About the Test</h2></header>
+    <section>
+      <p>
+        This test you are about to take will test you on things that we think
+        you should know at this point. You will be given 1 hour to get through
+        the test. If you finish early you can work on your project. Once you are
+        complete let an instructor or teacher assistant know.
+      </p>
+      <h3>For the Shopping List</h3>
+      <p>
+        In the JS file you will find an array of shopping items. You are going
+        to display them in the shopping list section. Use the DOM query
+        selectors that you have been taught in order to find and create list
+        item elements.
+      </p>
+      <ul>
+        <li>
+          Update the title of the Shopping list using JS to your first name's
+          shopping list
+        </li>
+        <li>
+          Loop through the array in the JS file and display the shopping list.
+        </li>
+        <li>Write a function that will title case the items in the array.</li>
+      </ul>
+      <h3>For the Calculator</h3>
+      <p>
+        Using the same JS file use your DOM query selectors in order to grab the
+        value of what was typed in the number1 and number2 input fields. You
+        will then add the two numbers and display them in the p-tag with the id
+        of <strong>display-total.</strong>
+      </p>
+      <ul>
+        <li>fish for the form</li>
+        <li>add an evenlistner</li>
+        <li>don't forget about the preventDefault()</li>
+        <li>use console logging and debuggers as needed</li>
+        <li>You may need to use typeof to figure things out</li>
+      </ul>
+      <center><h1>Good Luck! ☘️</h1></center>
+    </section>
+    <hr />
+
+    <!-- Your Can Alter Code Below Here -->
+    <div>
+      <h1 id="shopping-list-title">[Update Title Shopping List]</h1>
+      <ul id="shopping-list">
+        <!-- TODO: in JS file add LI's from the shopping list array -->
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <h2>Calculator</h2>
+      <form id="calculator-form" onsubmit="(e)=>testFunc(e)">
+        <input type="number" id="number1" /> +
+        <input type="number" id="number2" />
+        <input type="submit" value="Click To Add" />
+      </form>
+      <p id="display-total">[DISPLAY TOTAL HERE]</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
